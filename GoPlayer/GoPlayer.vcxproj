@@ -64,7 +64,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GtpEngine.cpp" />
+    <ClCompile Include="GtpInputStream.cpp" />
+    <ClCompile Include="GtpOutputStream.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GtpEngine.h" />
+    <ClInclude Include="GtpInputStream.h" />
+    <ClInclude Include="GtpOutputStream.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
