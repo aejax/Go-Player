@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GtpEngine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -29,13 +26,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GtpOutputStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="GtpEngine.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GtpInputStream.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GtpOutputStream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -3,6 +3,10 @@
 See GtpEngine.h */
 //----------------------------------------------------------------------------
 
+#ifndef GTPENGINE_MAIN
+#define GTPENGINE_MAIN 1
+#endif
+
 #include "GtpEngine.h"
 
 #include <iomanip>
@@ -847,8 +851,10 @@ int main()
 {
 	try
 	{
-		GtpEngine engine(cin, cout);
-		engine.MainLoop();
+		GtpInputStream in(std::cin);
+		GtpOutputStream out(std::cout);
+		GtpEngine engine;
+		engine.MainLoop(in, out);
 	}
 	catch (const std::exception& e)
 	{
